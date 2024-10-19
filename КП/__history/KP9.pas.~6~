@@ -1,0 +1,75 @@
+unit KP9;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons, Vcl.StdCtrls,
+  Vcl.Imaging.jpeg, Vcl.ExtCtrls;
+
+type
+  TForm9 = class(TForm)
+    Image1: TImage;
+    Memo1: TMemo;
+    Memo2: TMemo;
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    ComboBox1: TComboBox;
+    Edit1: TEdit;
+    Label1: TLabel;
+    Edit2: TEdit;
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure SpeedButton2Click(Sender: TObject);
+    procedure SpeedButton3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form9: TForm9;
+
+implementation
+
+{$R *.dfm}
+
+uses KP2;
+
+
+
+procedure TForm9.SpeedButton1Click(Sender: TObject);
+begin
+memo1.Visible :=true;
+memo2.visible:=false;
+combobox1.Visible :=true;
+form9.memo1.lines.loadfromfile('медиа\сылки\животные.txt');
+ComboBox1.Items.Clear;
+combobox1.text:=('Выберите вид сортировки');
+combobox1.Items.add('Сортировка по алфавиту');
+combobox1.Items.add('Сортировка по видам');
+edit1.Visible :=true;
+end;
+
+procedure TForm9.SpeedButton2Click(Sender: TObject);
+begin
+memo2.visible:=true;
+memo1.visible:=false;
+combobox1.Visible :=true;
+form9.memo2.lines.loadfromfile('медиа\сылки\растения.txt');
+ComboBox1.Items.Clear;
+combobox1.text:=('Выберите вид сортировки');
+combobox1.Items.add('Сортировка по алфавиту');
+combobox1.Items.add('Сортировка по видам');
+combobox1.Items.add('Сортировка по статусу охраны');
+edit2.Visible :=true;
+end;
+
+procedure TForm9.SpeedButton3Click(Sender: TObject);
+begin
+form9.close;
+form2.show;
+end;
+
+end.

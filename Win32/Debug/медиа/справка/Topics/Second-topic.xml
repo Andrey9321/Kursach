@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2024-06-24T09:55:36.224+03:00" lasteditedby="VICTUS" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>Наваигация</title>
+  <body>
+    <header>
+      <para styleclass="Heading1">Наваигация</para>
+    </header>
+    <para styleclass="Normal"><text style="font-family:&apos;Times New Roman&apos;; font-size:18pt; font-weight:bold;">Запуск приложения</text></para>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:&apos;Times New Roman&apos;; font-size:14pt; color:#000000;">После запуска приложения нас встречает окно загрузки. Чтобы пройти далее надо нажать ЛКМ по окну. </text></para>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"></para>
+    <para styleclass="Normal" style="text-align:center;"><image src="clip0009.png" imagestyleclass="Default" scale="63.82%" width="436" height="448" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Normal" style="text-align:center;"></para>
+    <para styleclass="Normal" style="text-align:center;"><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt;">Рисунок 1 - Окно загрузки</text></para>
+    <para styleclass="Normal" style="text-align:center;"></para>
+    <para styleclass="Normal"><text style="font-family:&apos;Times New Roman&apos;; font-size:18pt; font-weight:bold;">Главное меню</text></para>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:&apos;Times New Roman&apos;; font-size:14pt; color:#000000;">После загрузки нас встречает главное окно приложения, с помощью которого происходит навигация по всему приложению.Также тут можно отключить музыку в приложении.</text></para>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"></para>
+    <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><image src="clip0010.png" imagestyleclass="Default" scale="66.50%" width="682" height="648" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"></para>
+    <para styleclass="" style="text-align:center; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="" style="font-family:&apos;Times New Roman&apos;; font-size:14pt; color:#000000;">Рисунок 2 - Главное меню</text></para>
+    <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"></para>
+    <para styleclass="Normal"><text style="font-family:&apos;Times New Roman&apos;; font-size:18pt; font-weight:bold;">Информация по разделам</text></para>
+    <para styleclass="Normal"><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt;">После нажатия на кнопку &quot;Начать путишествие&quot; мы попадаем на данное окно где можем выбрать интересующую нас информацию.</text></para>
+    <para styleclass="Normal" style="text-align:center;"><image src="clip0011.png" imagestyleclass="Default" scale="65.39%" width="769" height="638" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Normal" style="text-align:center;"><tab /></para>
+    <para styleclass="Normal" style="text-align:center;"><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt;">Рисунок 3 - Информация</text></para>
+    <para styleclass="Normal"><tab /></para>
+    <para styleclass="Normal"><tab /><text style="font-family:&apos;Times New Roman&apos;; font-size:18pt; font-weight:bold;">Текстовая информация</text></para>
+    <para styleclass="Normal"><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt;">При нажатии на кнопки &quot;Пуща на карте&quot;, &quot;История&quot;, &quot;Флора&quot;, &quot;Фауна&quot;, &quot;Экскурсия&quot;, &quot;Контакты&quot; мы будем наблюдать окна с текстовой информацией.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal" style="text-align:center;"><image src="clip0012.png" imagestyleclass="Default" scale="71.38%" width="868" height="596" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Normal" style="text-align:center;"></para>
+    <para styleclass="Normal" style="text-align:center;"><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt;">Рисунок 4 - Окно текстовой информации</text></para>
+    <para styleclass="Normal" style="text-align:center;"></para>
+    <para styleclass="Normal"><tab /><text style="font-family:&apos;Times New Roman&apos;; font-size:18pt; font-weight:bold;">Фотогалерея</text></para>
+    <para styleclass="Normal"><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt;">При нажатии на кнопку &quot;фотогалерия&quot; мы переходим на окно с кнопками &quot;вперед&quot; и &quot;назад&quot; для просмотра фотографий</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal" style="text-align:center;"><image src="clip0013.png" imagestyleclass="Default" scale="63.21%" width="801" height="669" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Normal" style="text-align:center;"></para>
+    <para styleclass="Normal" style="text-align:center;"><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt;">Рисунок 5 - Фотогалерея</text></para>
+    <para styleclass="Normal" style="text-align:center;"></para>
+    <para styleclass="Normal"><tab /><text style="font-family:&apos;Times New Roman&apos;; font-size:18pt; font-weight:bold;">Поиск по видам</text></para>
+    <para styleclass="Normal"><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt;">При нажатии на кнопку &quot;поиск по видам&quot; мы попадаем на окно которое паможет найти определенное животное или растение находящиеся в Беловежской пуще, а так же провести некоторую сортировку.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal" style="text-align:center;"><image src="clip0022.png" imagestyleclass="Default" scale="78.16%" width="913" height="814" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Normal" style="text-align:center;"></para>
+    <para styleclass="Normal" style="text-align:center;"><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt;">Рисунок 6 - Поиск по видам</text></para>
+    <para styleclass="Normal" style="text-align:center;"></para>
+    <para styleclass="Normal"><text style="font-family:&apos;Times New Roman&apos;; font-size:18pt; font-weight:bold;">Тест</text></para>
+    <para styleclass="Normal"><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt;">Вторая кнопка на главном меню перевеодит нас на окно с тестом который поможет проверить свои знания</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal" style="text-align:center;"><image src="clip0015.png" imagestyleclass="Default" scale="72.91%" width="771" height="626" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Normal" style="text-align:center;"></para>
+    <para styleclass="Normal" style="text-align:center;"><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt;">Рисунок 7 - Тест</text></para>
+  </body>
+</topic>

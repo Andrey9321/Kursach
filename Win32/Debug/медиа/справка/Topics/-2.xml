@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2024-06-24T14:02:45.235+03:00" lasteditedby="VICTUS" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>О разработчике</title>
+  <body>
+    <header>
+      <para styleclass="Heading1">О разработчике</para>
+    </header>
+    <para styleclass="Normal" style="text-align:center;"><tab /><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt;">Я - Юркевич Андрей Михайлович являюсь разработчикам приложения &apos;&apos;Путешествие в Беловежскую пущу&apos;&apos;.</text></para>
+    <para styleclass="Normal"><tab /></para>
+    <para styleclass="Normal" style="text-align:center;"><tab /><image src="clip0024.png" imagestyleclass="Default" scale="65.13%" width="316" height="571" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Normal" style="text-align:center;"></para>
+    <para styleclass="Normal"><tab /><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt;">Я родился 25.08.2007 года в городе Дрогичн, Брестская область и я создал приложения &quot;Путешествие по Беловежской пуще&quot;. После оканчание 9 классов в средней школе №2 города Дрогичина я поступил в Гродненский Государственный Политехнический Колледж на специальность техник-программист. Мне интересно IT направление и нравится в нем развиваться. В ходе своего развития я и создал этот проект, &#160;надеюсь он станет полезным допалнением к огромному количеству информации в интернете про Беловежскую пущу. </text></para>
+    <para styleclass="Normal" style="text-align:right;"><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt;">Email:</text><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt; color:#0000ff;">yrkandrey@gmail.com</text></para>
+  </body>
+</topic>

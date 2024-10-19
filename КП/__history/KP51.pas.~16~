@@ -1,0 +1,141 @@
+unit KP51;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.jpeg, Vcl.ExtCtrls,
+  Vcl.MPlayer, Vcl.Buttons, Vcl.Imaging.pngimage;
+
+type
+  TForm8 = class(TForm)
+    Image1: TImage;
+    MediaPlayer1: TMediaPlayer;
+    Panel1: TPanel;
+    Image2: TImage;
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    SpeedButton4: TSpeedButton;
+    SpeedButton5: TSpeedButton;
+    SpeedButton6: TSpeedButton;
+    SpeedButton7: TSpeedButton;
+    OpenDialog1: TOpenDialog;
+    procedure FormCreate(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure SpeedButton2Click(Sender: TObject);
+    procedure SpeedButton3Click(Sender: TObject);
+    procedure SpeedButton4Click(Sender: TObject);
+    procedure SpeedButton5Click(Sender: TObject);
+    procedure SpeedButton7Click(Sender: TObject);
+    procedure SpeedButton6Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form8: TForm8;
+  count:integer;
+  filepath:string;
+implementation
+
+{$R *.dfm}
+
+uses KP2, KP;
+
+procedure TForm8.FormCreate(Sender: TObject);
+begin
+//  count := 1;
+//  mediaplayer1.open;
+//  mediaplayer1.DisplayRect:=panel1.ClientRect;
+end;
+
+procedure TForm8.SpeedButton1Click(Sender: TObject);
+begin
+// if count<6 then
+//       begin
+//      count := count + 1;
+//           var path:='медиа\кпкартинки\видиоKP2\'+inttostr(count)+ '.wmv';
+//           mediaplayer1.Close;
+//           mediaplayer1.FileName	:=path;
+//           mediaplayer1.open;
+//            mediaplayer1.DisplayRect:=panel1.ClientRect;
+//           mediaplayer1.Play;
+//       end
+//       else
+//       begin
+//       count:=1;
+//           var path:='медиа\кпкартинки\видиоKP2\'+inttostr(count)+ '.wmv';
+//           mediaplayer1.Close;
+//           mediaplayer1.FileName	:=path;
+//           mediaplayer1.open;
+//           mediaplayer1.DisplayRect:=panel1.ClientRect;
+//           mediaplayer1.Play;
+//       end;
+//
+
+end;
+
+procedure TForm8.SpeedButton2Click(Sender: TObject);
+begin
+//mediaplayer1.Position :=0;
+//mediaplayer1.play;
+end;
+
+procedure TForm8.SpeedButton3Click(Sender: TObject);
+begin
+// if count>1 then
+//          begin
+//          count := count - 1;
+//           var path:='медиа\кпкартинки\видиоKP2\'+inttostr(count)+ '.wmv';
+//           mediaplayer1.Close;
+//           mediaplayer1.FileName	:=path;
+//           mediaplayer1.open;
+//            mediaplayer1.DisplayRect:=panel1.ClientRect;
+//           mediaplayer1.Play;
+//          enD
+//          else
+//          begin
+//          count:=6 ;
+//           var path:='медиа\кпкартинки\видиоKP2\'+inttostr(count)+ '.wmv';
+//           mediaplayer1.Close;
+//           mediaplayer1.FileName	:=path;
+//           mediaplayer1.open;
+//           mediaplayer1.DisplayRect:=panel1.ClientRect;
+//           mediaplayer1.Play;
+//          end;
+end;
+
+procedure TForm8.SpeedButton4Click(Sender: TObject);
+begin
+//if mediaplayer1.mode=mpPlaying then
+//  mediaplayer1.Stop
+//else
+// mediaplayer1.Play;
+
+end;
+
+procedure TForm8.SpeedButton5Click(Sender: TObject);
+begin
+//      MediaPlayer1.Position := MediaPlayer1.Position + 1500;
+//      mediaplayer1.Play;
+end;
+
+procedure TForm8.SpeedButton6Click(Sender: TObject);
+begin
+//       MediaPlayer1.Position := MediaPlayer1.Position - 1500;
+//      mediaplayer1.Play;
+end;
+
+procedure TForm8.SpeedButton7Click(Sender: TObject);
+begin
+//  form8.Close;
+//form2.Show;
+//form8.MediaPlayer1.close;
+//form1.MediaPlayer1.Open;
+//form1.MediaPlayer1.play;
+end;
+
+end.

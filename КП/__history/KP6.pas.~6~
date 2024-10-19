@@ -1,0 +1,80 @@
+unit KP6;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Imaging.jpeg, Vcl.ExtCtrls,
+  Vcl.Buttons, Vcl.StdCtrls, Vcl.Imaging.pngimage;
+
+type
+  TForm6 = class(TForm)
+    Image1: TImage;
+    Memo1: TMemo;
+    SpeedButton2: TSpeedButton;
+    Image2: TImage;
+    SpeedButton3: TSpeedButton;
+    Image3: TImage;
+    SpeedButton1: TSpeedButton;
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure SpeedButton2Click(Sender: TObject);
+    procedure SpeedButton3Click(Sender: TObject);
+    procedure Image2Click(Sender: TObject);
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form6: TForm6;
+
+implementation
+
+{$R *.dfm}
+
+uses KP2, KP7;
+
+procedure TForm6.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+if key=27 then
+  begin
+      form2.Show;
+    form6.Close;
+
+  end;
+end;
+
+procedure TForm6.Image2Click(Sender: TObject);
+begin
+FORM7.SHOW;
+end;
+
+procedure TForm6.SpeedButton1Click(Sender: TObject);
+begin
+form2.Show;
+form6.Close;
+end;
+
+procedure TForm6.SpeedButton2Click(Sender: TObject);
+begin
+image2.Visible :=TRUE;
+MEMO1.Visible :=FALSE;
+ SpeedButton3.VISIBLE:=TRUE;
+ image3.Visible :=false;
+ SpeedButton1.VISIBLE:=false;
+
+end;
+
+procedure TForm6.SpeedButton3Click(Sender: TObject);
+begin
+ image2.Visible :=FALSE;
+MEMO1.Visible :=TRUE;
+ SpeedButton3.VISIBLE:=FALSE;
+  image3.Visible :=true;
+ SpeedButton1.VISIBLE:=true;
+end;
+
+end.

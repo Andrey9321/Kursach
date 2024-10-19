@@ -1,0 +1,154 @@
+unit KP3;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons, Vcl.Imaging.jpeg,
+  Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.DBCtrls;
+
+type
+  TForm3 = class(TForm)
+    Image1: TImage;
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    Label2: TLabel;
+    RadioGroup1: TRadioGroup;
+    RadioGroup2: TRadioGroup;
+    Panel1: TPanel;
+    Button1: TButton;
+    Button2: TButton;
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormCreate(Sender: TObject);
+    procedure RadioGroup1Click(Sender: TObject);
+    procedure SpeedButton2Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form3: TForm3;
+    f: text;
+  s,filepath: string;
+  Nvern, ball, count: integer;
+
+implementation
+
+{$R *.dfm}
+
+uses KP;
+
+
+procedure TForm3.Button1Click(Sender: TObject);
+begin
+panel1.Visible :=false;
+end;
+
+procedure TForm3.Button2Click(Sender: TObject);
+begin
+RadioGroup1Click(Sender);
+panel1.Visible :=false;
+end;
+
+procedure TForm3.FormCreate(Sender: TObject);
+begin
+SpeedButton2.Enabled:=true;
+RadioGroup1.ParentFont := false;
+RadioGroup1.Font.Name := 'Showcard Gothic';
+RadioGroup1.Font.color := clwhite;
+RadioGroup1.Font.Size := 7;
+end;
+
+procedure TForm3.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+if key=27 then
+begin
+  form3.Close;
+  form1.Show;
+end;
+if key=13 then
+  SpeedButton2Click(Sender);
+end;
+
+procedure TForm3.RadioGroup1Click(Sender: TObject);
+begin
+ RadioGroup1.Enabled:=false; //Выбор варианта становится недоступен
+RadioGroup2.enabled:=true; //Доступным становится поле с вопросом
+speedButton2.Enabled:=true; //Кнопка Далее
+case RadioGroup1.ItemIndex of //В зависимости от выбранного варианта переменная f
+ 0:AssignFile( f ,'медиа\сылки\вапросы\легкий.txt');//связывается с разными файлами
+ 1: AssignFile( f ,'медиа\сылки\вапросы\средний.txt');
+ 2: AssignFile( f ,'медиа\сылки\вапросы\сложный.txt');
+end;
+reset(f); //Открываем файл для чтения
+readln(f,s); //Считываем первую строку из файла
+ball:=0; //изначально количество баллов 0
+count := 0;
+repeat
+if (s[1]='-') then begin //Если первый символ строки ‘-‘ значит это вопрос
+count := count + 1;
+delete(s,1,1);
+RadioGroup2.Caption:=s;
+end
+else if s[1]='*' then begin //Если перв символ ‘*’ значит это номер верного ответа
+delete(s,1,1);
+Nvern:=StrToInt(s);
+end
+else RadioGroup2.Items.Add(s); //Иначе это вариант ответа
+readln(f,s); //Считываем следующую строку из файла
+until (s[1]='-') or (Eof(f));
+end;
+
+procedure TForm3.SpeedButton1Click(Sender: TObject);
+begin
+FORM1.SHOW;
+FORM3.Close;
+radiogroup2.Items.Clear;
+radiogroup2.CAption:='';
+speedButton2.Enabled:=False;
+radiogroup1.Enabled:=true;
+end;
+
+procedure TForm3.SpeedButton2Click(Sender: TObject);
+begin
+if (RadioGroup2.ItemIndex>-1) and (not Eof(f)) then begin
+if RadioGroup2.ItemIndex = Nvern-1 then ball:=ball+1; //Если выбранный вариант соответствует
+RadioGroup2.Items.Clear; //номеру верного ответа то балл прибавляется
+Repeat //и очищается поле для следующего вопроса
+if (s[1]='-') then begin
+delete(s,1,1);
+RadioGroup2.Caption:=s;
+end
+else if s[1]='*' then begin
+delete(s,1,1);
+Nvern:=StrToInt(s);
+end
+else RadioGroup2.Items.Add(s);
+readln(f,s);
+until (s[1]='-') or (Eof(f));
+end
+//Если конец файла достигнут, значит вопросы закончились
+Else if Eof(f) then begin
+delete(s,1,1);
+Nvern:=StrToInt(s);
+if RadioGroup2.ItemIndex = Nvern-1 then ball:=ball+1;
+Label2.Caption:= floattoStr((ball/count)*20) + '% правильных ответов'; //Вывод количества баллов
+CloseFile(f);
+radiogroup2.Items.Clear;
+radiogroup2.CAption:='';
+speedButton2.Enabled:=False; //кнопка становится недоступной в завершении проекта
+radiogroup1.Enabled:=true;
+radiogroup2.Enabled:=true;
+//showmessage(Label2.Caption);
+panel1.Caption :=label2.Caption ;
+panel1.Visible := true;
+end;
+end;
+
+end.

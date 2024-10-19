@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XInclude">
+  <topicref type="topic" id="454645423689583" build="ALL" modified="2024-06-21T15:21:41.569Z" icon="0" href="Introduction">
+    <caption translate="true">Общие сведения</caption>
+    <topicref type="topic" id="454645739891661" build="ALL" modified="2024-06-21T15:22:00.366Z" icon="0" href="Welcome-topic">
+      <caption translate="true">О приложении</caption>
+    </topicref>
+    <topicref type="topic" id="454644982096797" build="ALL" modified="2024-06-21T15:22:10.177Z" icon="0" href="Second-topic">
+      <caption translate="true">Наваигация</caption>
+    </topicref>
+    <topicref type="topic" id="454647278434671" build="ALL" modified="2024-06-23T21:51:22.390Z" icon="0" href="--">
+      <caption translate="true">О фотогалерее</caption>
+    </topicref>
+    <topicref type="topic" id="454648542861254" build="ALL" modified="2024-06-23T21:51:28.741Z" icon="0" href="-">
+      <caption translate="true">О поиске</caption>
+    </topicref>
+    <topicref type="topic" id="454644691626809" build="ALL" modified="2024-06-21T15:23:30.632Z" icon="0" href="New-topic">
+      <caption translate="true">О тесте</caption>
+    </topicref>
+    <topicref type="topic" id="454646989795280" build="ALL" modified="2024-06-23T22:09:58.801Z" icon="0" href="-2">
+      <caption translate="true">О разработчике</caption>
+    </topicref>
+  </topicref>
+</map>

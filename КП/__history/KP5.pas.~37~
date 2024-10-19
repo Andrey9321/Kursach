@@ -1,0 +1,199 @@
+unit KP5;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.jpeg,
+  Vcl.Buttons, Vcl.Imaging.pngimage, Vcl.StdCtrls, Vcl.MPlayer;
+
+type
+  TForm5 = class(TForm)
+    Image1: TImage;
+    Image2: TImage;
+    Image3: TImage;
+    SpeedButton1: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormCreate(Sender: TObject);
+    procedure SpeedButton2Click(Sender: TObject);
+    procedure SpeedButton3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+  count:integer;
+  filepath:string;
+implementation
+{$R *.dfm}
+
+uses KP2, KP;
+
+procedure TForm5.FormCreate(Sender: TObject);
+begin
+  count := 1;
+//  mediaplayer1.open;
+//  mediaplayer1.DisplayRect:=panel1.ClientRect;
+end;
+
+procedure TForm5.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+if image3.visible=true then
+  begin
+  if key=39 then
+   begin
+     count := count + 1;
+     if count = 16  then
+        count := 1;
+
+     var path := 'медиа\кпкартинки\фотоKP2\' + inttostr(count) + '.jpg' ;
+     form5.Image3.Picture.LoadFromFile(path);
+   end
+   else if key=37 then
+      begin
+        count := count - 1;
+         if count < 1 then
+           count := 16;
+          var path := 'медиа\кпкартинки\фотоKP2\' + inttostr(count) + '.jpg' ;
+         form5.Image3.Picture.LoadFromFile(path);
+       end;
+  end;
+end;
+//else
+//  begin
+//  form1.mediaplayer1.Stop;
+
+
+//    if key=38 then
+//    begin
+//      if count<6 then
+//       begin
+//      count := count + 1;
+//           var path:='медиа\кпкартинки\видеоKP2\'+inttostr(count)+ '.mp4';
+//           mediaplayer1.Close;
+//           mediaplayer1.FileName	:=path;
+//           mediaplayer1.open;
+//            mediaplayer1.DisplayRect:=panel1.ClientRect;
+//           mediaplayer1.Play;
+//       end
+//       else
+//       begin
+//       count:=1;
+//           var path:='медиа\кпкартинки\видеоKP2\'+inttostr(count)+ '.mp4';
+//           mediaplayer1.Close;
+//           mediaplayer1.FileName	:=path;
+//           mediaplayer1.open;
+//           mediaplayer1.DisplayRect:=panel1.ClientRect;
+//           mediaplayer1.Play;
+//       end;
+//
+//
+//    end;
+//
+//    if key=40 then
+//    begin
+//      if count>1 then
+//          begin
+//          count := count - 1;
+//           var path:='медиа\кпкартинки\видеоKP2\'+inttostr(count)+ '.mp4';
+//           mediaplayer1.Close;
+//           mediaplayer1.FileName	:=path;
+//           mediaplayer1.open;
+//            mediaplayer1.DisplayRect:=panel1.ClientRect;
+//           mediaplayer1.Play;
+//          enD
+//          else
+//          begin
+//          count:=6 ;
+//           var path:='медиа\кпкартинки\видеоKP2\'+inttostr(count)+ '.mp4';
+//           mediaplayer1.Close;
+//           mediaplayer1.FileName	:=path;
+//           mediaplayer1.open;
+//           mediaplayer1.DisplayRect:=panel1.ClientRect;
+//           mediaplayer1.Play;
+//          end;
+//    end;
+//
+//    if key=39 then
+//    begin
+//      MediaPlayer1.Position := MediaPlayer1.Position + 1000;
+//      mediaplayer1.Play;
+//    end;
+//
+//    if key=37 then
+//    begin
+//      MediaPlayer1.Position := MediaPlayer1.Position - 1500;
+//      mediaplayer1.Play;
+//    end;
+//
+//    if key=32 then
+//    begin
+//      if MediaPlayer1.Mode = mpPlaying then
+//      MediaPlayer1.stop
+//    else
+//      MediaPlayer1.Play;
+//    end;
+//
+//    if key=96 then
+//    begin
+//      MediaPlayer1.Position := 0;
+//      MediaPlayer1.Play;
+//    end;
+//
+//  end;
+//
+//
+//if key=27 then
+//begin
+//  form5.Close;
+//  form2.Show;
+//  form5.MediaPlayer1.stop;
+//
+//  form1.mediaplayer1.play;
+//end;
+////
+//
+//end;
+
+
+procedure TForm5.SpeedButton1Click(Sender: TObject);
+begin
+form5.Close;
+form2.Show;
+//form5.MediaPlayer1.stop;
+end;
+
+procedure TForm5.SpeedButton2Click(Sender: TObject);
+begin
+if image3.visible=true then
+  begin
+ count := count - 1;
+         if count < 1 then
+           count := 16;
+          var path := 'медиа\кпкартинки\фотоKP2\' + inttostr(count) + '.jpg' ;
+         form5.Image3.Picture.LoadFromFile(path);
+end;
+
+end;
+
+procedure tForm5.SpeedButton3Click(Sender: TObject);
+begin
+if image3.visible=true then
+  begin
+    count := count + 1;
+     if count = 16  then
+        count := 1;
+
+     var path := 'медиа\кпкартинки\фотоKP2\' + inttostr(count) + '.jpg' ;
+     form5.Image3.Picture.LoadFromFile(path);
+end;
+end;
+
+end.

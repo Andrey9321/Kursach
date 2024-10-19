@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2024-06-23T22:03:14.367+03:00" lasteditedby="VICTUS" version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title>О фотогалерее</title>
+  <body>
+    <header>
+      <para styleclass="Heading1">О фотогалерее</para>
+    </header>
+    <para styleclass="Normal"><text style="font-family:&apos;Times New Roman&apos;; font-size:18pt; font-weight:bold;">Как работает фотогалерея:</text></para>
+    <para styleclass="Normal"><tab /><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt;">1. Здесь присутствует две кнопки в виде стрелок при помощи которых пользователь может выбирать фотографии на экране, после послелней фотографии будет первая.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal" style="text-align:center;"><image src="clip0006.png" imagestyleclass="Default" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Normal" style="text-align:center;"></para>
+    <para styleclass="Normal" style="text-align:center;"><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt;">Рисунок 1 - Кнопки перемотки</text></para>
+    <para styleclass="Normal" style="text-align:center;"></para>
+    <para styleclass="Normal"><tab /><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt;">2. Также есть кнопка &quot;дамой&quot; каторая возвращает пользователя на предыдущую страничку.</text></para>
+    <para styleclass="Normal"></para>
+    <para styleclass="Normal" style="text-align:center;"><image src="clip0007.png" imagestyleclass="Default" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+    <para styleclass="Normal" style="text-align:center;"></para>
+    <para styleclass="Normal" style="text-align:center;"><text style="font-family:&apos;Times New Roman&apos;; font-size:14pt;">Рисунок 2 - Дмой</text></para>
+  </body>
+</topic>
